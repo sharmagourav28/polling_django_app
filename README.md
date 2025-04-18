@@ -8,9 +8,10 @@ A simple Django-based web application that allows users to create polls, vote on
 
 ### ✅ Goals
 
-- Install Django
+- Created venv for the project and activate the venv
+- Install Django on the virtual project
 - Set up the Django project and app
-- Create a superuser
+- created the required project folder's for the project
 - Set up basic routing and verify the server runs
 
 ---
