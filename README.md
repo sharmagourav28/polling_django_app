@@ -15,7 +15,7 @@ A simple Django-based web application that allows users to create polls, vote on
 - created the required project folder's for the project
 - Set up basic routing and verify the server runs
 
-## 📅 Day 2: Day 2: Design Models (Poll & Option)
+## 📅 Day 2: Design Models (Poll & Option)
 
 ### ✅ Goals
 
@@ -27,3 +27,12 @@ A simple Django-based web application that allows users to create polls, vote on
 - Register models in admin
 - Run migrations: makemigrations + migrate
 - created admin (superuser) and set userid & password
+
+✅ Day 3: Poll List Page (Home)
+
+### ✅ Goals
+
+- Build index view to show all polls
+- Design index.html with Bootstrap
+- Loop through polls in the template
+- Goal: Homepage lists all polls, clickable
