@@ -36,3 +36,27 @@ A simple Django-based web application that allows users to create polls, vote on
 - Design index.html with Bootstrap
 - Loop through polls in the template
 - Goal: Homepage lists all polls, clickable
+
+✅ Day 4: Poll Detail + Voting Page
+
+### ✅ Goals
+
+- Create poll_detail view
+- Show poll question and multiple choice options
+- Submit vote (POST request)
+- Increment vote count
+- Prevent multiple voting (store who voted)
+
+✅ Goal: User can vote once per poll
+
+✅ Day 4: Poll Detail + Voting Page
+
+### ✅ Goals
+
+- Create poll_detail view
+- Show poll question and multiple choice options
+- Submit vote (POST request)
+- Increment vote count
+- Prevent multiple voting (store who voted)
+
+✅ Goal: User can vote once per poll
