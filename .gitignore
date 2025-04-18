@@ -3,3 +3,4 @@ lib
 Scripts
 .idea
 pyvenv.cfg
+myproject/myproject/settings.py
