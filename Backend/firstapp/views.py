@@ -21,29 +21,30 @@ def poll_detail(request, poll_id):
             if request.session.get(f"voted_{poll_obj.id}", False):
                 return render(
                     request,
-                    "details.html",
+                    "detail.html",
                     {"poll": poll_obj, "error": "You have already voted on this poll."},
                 )
             try:
-                option = poll_obj.option_set.get(pk=selected_option)
-                option.votes += 1
-                option.save()
-                request.session[f"voted_{poll_obj.id}"] = True
-                return redirect("poll_result", poll_id=poll_obj.id)
-            except:
+                option = poll_obj.options.get(pk=selected_option)  # 🛠 FIXED HERE
+            except options.DoesNotExist:
                 return render(
                     request,
-                    "details.html",
-                    {"poll": poll_obj, "error": "Selected option not found."},
+                    "detail.html",
+                    {"poll": poll_obj, "error": "Selected option is not available."},
                 )
+
+            option.votes += 1
+            option.save()
+            request.session[f"voted_{poll_obj.id}"] = True
+            return redirect("poll_result", poll_id=poll_obj.id)
         else:
             return render(
                 request,
-                "details.html",
+                "detail.html",
                 {"poll": poll_obj, "error": "Please select an option."},
             )
 
-    return render(request, "details.html", {"poll": poll_obj})
+    return render(request, "detail.html", {"poll": poll_obj})
 
 
 def poll_result(request, poll_id):

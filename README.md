@@ -28,7 +28,7 @@ A simple Django-based web application that allows users to create polls, vote on
 - Run migrations: makemigrations + migrate
 - created admin (superuser) and set userid & password
 
-✅ Day 3: Poll List Page (Home)
+## 📅 Day 3: Poll List Page (Home)
 
 ### ✅ Goals
 
@@ -37,7 +37,7 @@ A simple Django-based web application that allows users to create polls, vote on
 - Loop through polls in the template
 - Goal: Homepage lists all polls, clickable
 
-✅ Day 4: Poll Detail + Voting Page
+## 📅 Day 4: Poll Detail + Voting Page
 
 ### ✅ Goals
 
@@ -47,16 +47,13 @@ A simple Django-based web application that allows users to create polls, vote on
 - Increment vote count
 - Prevent multiple voting (store who voted)
 
-✅ Goal: User can vote once per poll
-
-✅ Day 4: Poll Detail + Voting Page
+## 📅 Day 5: User can vote once per poll
 
 ### ✅ Goals
 
-- Create poll_detail view
-- Show poll question and multiple choice options
-- Submit vote (POST request)
-- Increment vote count
-- Prevent multiple voting (store who voted)
+- Day 5: Results Page
+- Create results view and template
+- Display vote counts for each option
+- Add a button on poll_detail to view results
 
-✅ Goal: User can vote once per poll
+✅ Goal: After voting, users can see live results
